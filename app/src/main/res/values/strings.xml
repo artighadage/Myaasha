@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MGM TB</string>
+
+    <string name="spinner_title">District</string>
+    <string name="spin_title">Area</string>
+    <string name="health_comp">primary Concern</string>
+
+</resources>

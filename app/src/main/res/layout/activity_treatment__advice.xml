@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Treatment_Advice"
+    android:background="@drawable/gradient_background"
+    android:padding="25dp"
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Treatment Advice"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+
+            android:id="@+id/parent_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_shape"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp"
+                    android:text="Types of TB:">
+
+                </TextView>
+
+
+                <Spinner
+                   android:layout_marginBottom="10dp"
+                    android:id="@+id/spinner1"
+                    android:padding="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="11sp"
+                    android:background="@drawable/border"
+
+                    />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp"
+                    android:text="Treatment">
+
+                </TextView>
+                <EditText
+
+                    android:id="@+id/edt_patient_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/border"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:hint=" Enter Treatment here"
+                    android:imeOptions="actionNext"
+                    android:lines="2"
+                    android:padding="8dp"
+                    android:textColorHint="#AFABAB"
+                    android:textSize="12sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp"
+                    android:text="Medicine Prescribed">
+
+                </TextView>
+                <EditText
+
+                    android:id="@+id/edt_"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:hint=" Enter Medicine Prescribed"
+                    android:lines="4"
+                    android:padding="8dp"
+                    android:textColorHint="#AFABAB"
+                    android:textSize="12sp"
+                    />
+
+                <Button
+        android:id="@+id/btnDate"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/border"
+        android:layout_gravity="center"
+        android:text="Select a date and time for next Appointment"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:background="@drawable/border"
+        android:id="@+id/tvSelectedDate"
+        android:lines="1"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDate"
+        android:layout_marginTop="10dp"
+        android:textSize="12sp" />
+
+
+
+                <Button
+                    android:id="@+id/tratment_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_bg"
+                    android:imeOptions="actionNext"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+

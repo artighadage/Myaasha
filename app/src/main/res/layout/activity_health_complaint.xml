@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Health_complaint"
+    android:background="@drawable/gradient_background"
+    android:padding="25dp"
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Diagnosis"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+
+            android:id="@+id/parent_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_shape"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"></TextView>
+
+
+
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:textColorHint="#706D6D"
+                android:textSize="12sp"
+                android:text="Symptoms:">
+
+            </TextView>
+                <EditText
+
+                    android:id="@+id/edt_pa"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:hint="Enter Symptoms"
+                    android:lines="5"
+                    android:padding="5dp"
+                    android:textColorHint="#AFABAB"
+                    android:textSize="12sp"
+
+
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:text="Medical Tests:"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp">
+
+                </TextView>
+
+                <LinearLayout
+                android:weightSum="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                    <CheckBox
+                        android:id="@+id/chkIos"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Temperature :"
+                        android:textSize="12sp" />
+
+
+
+                <EditText
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id2"
+                    android:inputType="number"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/chkI"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Pressure :"
+                        android:textSize="12sp" />
+
+
+
+                    <EditText
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id"
+                        android:inputType="number"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:weightSum="2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/chkIo"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Test :"
+                        android:textSize="12sp" />
+
+
+
+                    <EditText
+
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia"
+                        android:inputType="number"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_id"
+                    android:text="Other Tests:"
+                    android:textSize="12sp"/>
+
+                <EditText
+
+                    android:id="@+id/edt_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/border"
+                    android:cursorVisible="true"
+                    android:focusable="true"
+                    android:hint="Other Reports"
+                    android:imeOptions="actionNext"
+                   android:lines="4"
+                    android:padding="8dp"
+                    android:textColorHint="#AFABAB"
+                    android:textSize="12sp"
+                    />
+
+
+
+
+                <Button
+                    android:id="@+id/health_info_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_bg"
+                    android:imeOptions="actionNext"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+
+            </LinearLayout>
+
+</ScrollView>
+    </RelativeLayout>
+</LinearLayout>

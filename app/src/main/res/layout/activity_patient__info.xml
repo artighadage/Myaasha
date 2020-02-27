@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Patient_Info"
+    android:background="@drawable/gradient_background"
+    android:padding="25dp"
+    android:orientation="vertical"
+    >
+
+
+    <TextView
+
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient Information"
+        android:textSize="22sp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:layout_marginBottom="15dp"
+
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+
+            android:id="@+id/parent_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="false"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rectangle_shape"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp"
+                    android:text="Patient Name:">
+
+                </TextView>
+            <LinearLayout
+
+                android:paddingBottom="3dp"
+                android:layout_marginTop="12dp"
+                android:weightSum="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="42dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="0.1"
+                    android:background="@drawable/border"
+                    android:prompt="@string/spinner_title"
+                    android:textSize="11sp" />
+
+                <EditText
+
+                android:id="@+id/edt_patient_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.4"
+                android:background="@drawable/border"
+                android:cursorVisible="true"
+                android:focusable="true"
+                android:hint="Enter Patient Full Name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                    android:padding="8dp"
+                android:textColorHint="#AFABAB"
+                android:textSize="11sp"
+
+               />
+            </LinearLayout>
+
+
+
+                <LinearLayout
+
+                    android:paddingBottom="2dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="5dp"
+                    android:weightSum="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <Spinner
+                        android:id="@+id/spinner4"
+                        android:layout_width="42dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="2dp"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/border"
+                        android:prompt="@string/spinner_title"
+                        android:textSize="11sp" />
+
+                    <EditText
+
+                        android:id="@+id/edt_p"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.1"
+                        android:background="@drawable/border"
+                        android:cursorVisible="true"
+                        android:focusable="true"
+                        android:hint="Enter Patient's KYC Number"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textColorHint="#AFABAB"
+                        android:textSize="11sp"
+
+                        />
+                </LinearLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp"
+                    android:text="Patient's Contact Number: ">
+
+                </TextView>
+
+            <EditText
+                android:id="@+id/edt_patient_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:cursorVisible="true"
+                android:hint="Patient's Contact Number: "
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:nextFocusDown="@id/edt_patient_number"
+                android:padding="8dp"
+                android:textColorHint="#AFABAB"
+                android:textSize="12sp"
+
+
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp"
+                    android:text="Gender:">
+
+                </TextView>
+            <RadioGroup
+
+                android:weightSum="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+
+                <!-- In RadioGroup create the 1 Radio Button-->
+                <!-- like this we will add some more Radio Button-->
+                <RadioButton
+                    android:layout_gravity="center"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id1"
+                    android:text="Male"
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id2"
+                    android:text="Female "
+                    android:textSize="12sp"/>
+
+                <RadioButton
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radia_id3"
+                    android:text="Other"
+                    android:textSize="12sp"/>
+
+            </RadioGroup>
+
+                <LinearLayout
+                    android:padding="1dp"
+                android:layout_marginTop="12dp"
+                android:weightSum="1.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                    <EditText
+                        android:padding="10dp"
+                        android:textSize="12sp"
+                        android:background="@drawable/border"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:hint="Age"
+                        android:layout_height="match_parent">
+
+                    </EditText>
+
+                <Spinner
+
+                    android:layout_marginLeft="15dp"
+                    android:id="@+id/spinner1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:textSize="11sp"
+                    android:background="@drawable/border"
+                    android:prompt="@string/spinner_title"
+                    />
+                </LinearLayout>
+
+                <Spinner
+
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/border"
+                    android:padding="8dp"
+                    android:textSize="11sp"
+                    android:prompt="@string/spin_title"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp"
+                    android:text="Patient's Address:"></TextView>
+
+                <EditText
+                    android:id="@+id/edt_patient_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:cursorVisible="true"
+                    android:gravity="start"
+                    android:hint="Patient's Address:"
+                    android:imeOptions="actionNext"
+                    android:lines="4"
+                    android:nextFocusDown="@id/edt_patient_add"
+                    android:padding="8dp"
+                    android:textAlignment="textStart"
+                    android:textColorHint="#AFABAB"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp"
+                    android:text="Pin Code:"></TextView>
+
+                <EditText
+                    android:id="@+id/edt_patient_service"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border"
+                    android:cursorVisible="true"
+                    android:gravity="start"
+                    android:hint="Pin Code:"
+                    android:imeOptions="actionNext"
+                    android:padding="8dp"
+                    android:textAlignment="textStart"
+                    android:textColorHint="#AFABAB"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:padding="8dp"
+                    android:textColorHint="#706D6D"
+                    android:textSize="12sp"
+                    android:text="Preferred Language:">
+
+                </TextView>
+
+                <RadioGroup
+
+                    android:weightSum="1.5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+
+                    <!-- In RadioGroup create the 1 Radio Button-->
+                    <!-- like this we will add some more Radio Button-->
+                    <RadioButton
+                        android:layout_gravity="center"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_id"
+                        android:text="Marathi"
+                        android:textSize="12sp"/>
+
+                    <RadioButton
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_i"
+                        android:text="Hindi "
+                        android:textSize="12sp"/>
+
+                    <RadioButton
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/radia_"
+                        android:text="English"
+                        android:textSize="12sp"/>
+
+                </RadioGroup>
+
+
+
+
+
+                <Button
+                    android:id="@+id/patient_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/button_bg"
+                    android:imeOptions="actionNext"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                </TextView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <ProgressBar
+            android:id="@+id/logBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>
